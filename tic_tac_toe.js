@@ -61,7 +61,7 @@ function Win(){
         let condition = winCondition[i];
         let [b1, b2, b3] = condition.map(index => boxes[index]);
 
-        if( b1.textContent!=='' && 
+        if( b1.textContent !== '' && 
             b1.textContent === b2.textContent && 
             b2.textContent === b3.textContent) {
 
@@ -75,7 +75,6 @@ function Win(){
             pxs.textContent = xPoint;
             pos.textContent = oPoint;
             setTimeout(Restart,500);
-
         }
         else if(!boxValues.includes('')){
             gameInProcess = false;
@@ -86,7 +85,6 @@ function Win(){
 
 function Remove(b1,b2,b3){
     boxes.forEach(box => {
-
         if (box !== b1 && box !== b2 && box !== b3 &&  box.textContent !== '') {
             box.textContent = '';
         }

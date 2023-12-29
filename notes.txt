@@ -1,0 +1,34 @@
+Tic Tac Toe
+
+HTML:
+    1. container -> box-container and score-container
+    2. box-container -> boxCode for 9 boxes
+    3. score-container -> score for player X and player O
+
+JS:
+    1. Initialization:
+        - Elements selected using querySelector and getElementById.
+        - Winning conditions and game state variables initialized.
+
+    2. Start Functionality:
+        - Game initialized with event listeners on boxes and restart button.
+        - Sets gameInProcess to true to begin.
+    
+    3. Click Event:
+        - Updates clicked empty box's value and text content.
+        - Adds a corresponding class ('X' or 'O') for styling.
+        - Changes players after each move.
+        - Triggers Win function to check for a winning pattern.
+
+    4. Win Function:
+        - Loops through win conditions to identify a winning pattern.
+        - Detects a win if a set of three boxes contains the same content.
+        - Adjusts game state, updates scores, and schedules a restart on win or draw.
+
+    5. Remove Function:
+        - Clears non-winning boxes after a win or draw.
+        - Removes text content from non-winning boxes.
+
+    6. Restart Function:
+        - Resets game variables and box values.
+        - Clears text content from all boxes for a fresh start.
